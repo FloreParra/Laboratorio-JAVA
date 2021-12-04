@@ -1,7 +1,7 @@
 package com.mudopc.domain;
 
 public class Orden {
-    private int idOrden;
+    private final int idOrden;
     private Computadora computadoras[];
     private static int contadorOrden;
     private int contadorComputadora;

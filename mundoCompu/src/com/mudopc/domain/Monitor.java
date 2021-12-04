@@ -3,17 +3,17 @@ package com.mudopc.domain;
 public class Monitor {
     private int idMonitor;
     private String marca;
-    private double tamaño;
+    private double tamanio;
     private static int contadorMonitor;
 
-    public Monitor() {
+    private Monitor() {
         this.idMonitor = ++Monitor.contadorMonitor;
     }
 
-    public Monitor(String marca, double tamaño) {
+    public Monitor(String marca, double tamanio) {
         this();
         this.marca = marca;
-        this.tamaño = tamaño;
+        this.tamanio = tamanio;
     }
 
     public int getIdMonitor() {
@@ -28,17 +28,17 @@ public class Monitor {
         this.marca = marca;
     }
 
-    public double getTamaño() {
-        return tamaño;
+    public double getTamanio() {
+        return tamanio;
     }
 
-    public void setTamaño(double tamaño) {
-        this.tamaño = tamaño;
+    public void setTamaño(double tamanio) {
+        this.tamanio = tamanio;
     }
 
     @Override
     public String toString() {
-        return "Monitor [idMonitor=" + idMonitor + ", marca=" + marca + ", tamaño=" + tamaño + "]";
+        return "Monitor [idMonitor=" + idMonitor + ", marca=" + marca + ", tamaño=" + tamanio + "]";
     }
 
 }

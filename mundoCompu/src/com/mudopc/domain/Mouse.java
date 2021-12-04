@@ -1,7 +1,7 @@
 package com.mudopc.domain;
 
 public class Mouse extends DispositivoEntrada {
-    private int idMouse;
+    private final int idMouse;
     private static int contadorMouse;
 
     public Mouse(String tipoDeEntada, String marca) {
@@ -11,6 +11,11 @@ public class Mouse extends DispositivoEntrada {
 
     public int getIdMouse() {
         return idMouse;
+    }
+
+    @Override
+    public String toString() {
+        return "Mouse [idMouse=" + idMouse + "]" + super.toString();
     }
 
 }

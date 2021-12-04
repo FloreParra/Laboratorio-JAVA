@@ -1,18 +1,19 @@
 package com.mudopc.domain;
 
 public class Computadora {
-    private int idCompu;
+    private final int idCompu;
     private String nombre;
     private Monitor monitor;
     private Mouse mouse;
     private Teclado teclado;
     private static int contadorCompu;
 
-    public Computadora() {
+    private Computadora() {
         this.idCompu = ++Computadora.contadorCompu;
     }
 
     public Computadora(String nombre, Monitor monitor, Mouse mouse, Teclado teclado) {
+        this();
         this.nombre = nombre;
         this.monitor = monitor;
         this.mouse = mouse;

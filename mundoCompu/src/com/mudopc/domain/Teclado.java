@@ -1,7 +1,7 @@
 package com.mudopc.domain;
 
 public class Teclado extends DispositivoEntrada {
-    private int idTeclado;
+    private final int idTeclado;
     private static int contadorTeclado;
 
     public Teclado(String tipoDeEntada, String marca) {
@@ -15,7 +15,7 @@ public class Teclado extends DispositivoEntrada {
 
     @Override
     public String toString() {
-        return "Teclado [idTeclado=" + idTeclado + "]";
+        return "Teclado [idTeclado=" + idTeclado + "]" + super.toString();
     }
 
 }
